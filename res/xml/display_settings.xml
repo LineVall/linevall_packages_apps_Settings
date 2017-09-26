@@ -203,6 +203,12 @@
             settings:requiresConfig="@*android:bool/config_proximityCheckOnWake" />
 
         <com.linevall.unsa.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/status_bar_double_tap_to_sleep_title"
+            android:summary="@string/status_bar_double_tap_to_sleep_summary"
+            android:defaultValue="true" />
+
+        <com.linevall.unsa.preferences.SystemSettingSwitchPreference
             android:key="high_touch_polling_rate_enable"
             android:title="@string/high_touch_polling_rate_title"
             android:summary="@string/high_touch_polling_rate_summary"
