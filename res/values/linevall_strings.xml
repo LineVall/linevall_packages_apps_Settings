@@ -20,4 +20,6 @@
     <string name="linevall_settings_title">LineVall Set</string>
     <string name="linevall_settings_summary">Customizations and more !</string>
 
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
 </resources>
