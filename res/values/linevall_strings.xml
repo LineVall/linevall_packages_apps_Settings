@@ -17,6 +17,10 @@
     <string name="linevall_version">LineVall version</string>
     <string name="about_device_name">Device</string>
 
+    <!-- Hardware info -->
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">Total RAM</string>
+
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
     <string name="selinux_status">SELinux status</string>
 
