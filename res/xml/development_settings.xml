@@ -34,11 +34,11 @@
             android:title="@*android:string/bugreport_title"
             android:dialogTitle="@*android:string/bugreport_title" />-->
 
-        <Preference
+        <!--<Preference
             android:key="bug_report_handler"
             android:title="@string/bug_report_handler_title"
             android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.bugreporthandler.BugReportHandlerPicker" />
+            android:fragment="com.android.settings.bugreporthandler.BugReportHandlerPicker" />-->
 
         <Preference
             android:key="system_server_heap_dump"
