@@ -50,16 +50,6 @@
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
             settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
-
-        <!-- Phone number -->
-        <com.android.settings.deviceinfo.PhoneNumberSummaryPreference
-            android:key="phone_number"
-            android:order="3"
-            android:title="@string/status_number"
-            android:summary="@string/summary_placeholder"
-            settings:isPreferenceVisible="@bool/config_show_sim_info"
-            settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
-            settings:enableCopying="true"/>
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -124,17 +114,6 @@
             settings:isPreferenceVisible="@bool/config_show_sim_info"
             settings:enableCopying="true"
             settings:controller="com.android.settings.deviceinfo.simstatus.SimEidPreferenceController"/>
-
-        <!-- IMEI -->
-        <com.android.settings.deviceinfo.PhoneNumberSummaryPreference
-            android:key="imei_info"
-            android:order="32"
-            android:title="@string/status_imei"
-            android:summary="@string/summary_placeholder"
-            settings:keywords="@string/keywords_imei_info"
-            settings:enableCopying="true"
-            settings:isPreferenceVisible="@bool/config_show_sim_info"
-            settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
         <!-- Android version -->
         <Preference
