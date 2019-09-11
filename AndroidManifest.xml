@@ -4903,6 +4903,23 @@
             android:authorities="${applicationId}.androidx-startup"
             tools:node="remove" />
 
+        <!-- LineVall -->
+        <activity
+            android:name=".Settings$LineVallSettings"
+            android:label="@string/linevall_settings_title"
+            android:parentActivityName="com.android.settings"
+            android:icon="@drawable/ic_homepage_linevall"
+            android:exported="true">
+            <intent-filter android:priority="69">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.linevall.unsa.LineVallSettings" />
+        </activity>
+
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
