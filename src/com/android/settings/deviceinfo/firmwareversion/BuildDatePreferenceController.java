@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The SuperiorOS Project
+ * Copyright (C) 2019 The SuperiorOS  Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,23 +26,23 @@ import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 
-public class LinevallVersionPreferenceController extends BasePreferenceController {
+public class BuildDatePreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String LINEVALL_VERSION_PROPERTY = "ro.linevall.display.version";
+    static final String BUILD_DATE_PROPERTY = "ro.build.date";
 
-    public LinevallVersionPreferenceController(Context context, String preferenceKey) {
+    public BuildDatePreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return !TextUtils.isEmpty(SystemProperties.get(LINEVALL_VERSION_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return !TextUtils.isEmpty(SystemProperties.get(BUILD_DATE_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(LINEVALL_VERSION_PROPERTY,
+        return SystemProperties.get(BUILD_DATE_PROPERTY,
                 mContext.getString(R.string.device_info_default));
     }
 }
