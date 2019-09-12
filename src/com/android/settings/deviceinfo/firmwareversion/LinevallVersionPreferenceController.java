@@ -29,7 +29,9 @@ import com.android.settings.core.BasePreferenceController;
 public class LinevallVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String LINEVALL_VERSION_PROPERTY = "ro.linevall.display.version";
+    static final String LINEVALL_VERSION_PROPERTY = "ro.modversion";
+    static final String LINEVALL_RELEASETYPE_PROPERTY = "ro.linevall.releasetype";
+    static final String LINEVALL_ZIPTYPE_PROPERTY = "ro.linevall.edition";
 
     public LinevallVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -37,12 +39,20 @@ public class LinevallVersionPreferenceController extends BasePreferenceControlle
 
     @Override
     public int getAvailabilityStatus() {
-        return !TextUtils.isEmpty(SystemProperties.get(LINEVALL_VERSION_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return !TextUtils.isEmpty(SystemProperties.get(LINEVALL_VERSION_PROPERTY)) && !TextUtils.isEmpty(SystemProperties.get(LINEVALL_RELEASETYPE_PROPERTY)) && !TextUtils.isEmpty(SystemProperties.get(LINEVALL_ZIPTYPE_PROPERTY))
+                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(LINEVALL_VERSION_PROPERTY,
-                mContext.getString(R.string.device_info_default));
+        String linevallVersion = SystemProperties.get(LINEVALL_VERSION_PROPERTY);
+        String linevallReleaseType = SystemProperties.get(LINEVALL_RELEASETYPE_PROPERTY);
+        String linevallZipType = SystemProperties.get(LINEVALL_ZIPTYPE_PROPERTY);
+        if (!linevallVersion.isEmpty() && !linevallReleaseType.isEmpty() && !linevallZipType.isEmpty()) {
+            return linevallVersion + " | " + linevallReleaseType + " | " + linevallZipType;
+        } else {
+            return
+                mContext.getString(R.string.device_info_default);
+        }
     }
 }
