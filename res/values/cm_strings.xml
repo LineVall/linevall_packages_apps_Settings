@@ -206,4 +206,7 @@
     <!-- Radio Info -->
     <string name="radio_info_title">Radio info</string>
 
+    <!-- Battery temperature -->
+    <string name="battery_temperature">Battery temperature</string>
+
 </resources>
