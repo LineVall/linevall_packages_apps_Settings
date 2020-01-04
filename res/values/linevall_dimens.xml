@@ -19,4 +19,7 @@
      <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
 
     <dimen name="stroke_widthAboutUI">1dp</dimen>
+
+     <!-- circle avatar size dimensions-->
+     <dimen name="circle_avatar_size">40dp</dimen>
 </resources>
