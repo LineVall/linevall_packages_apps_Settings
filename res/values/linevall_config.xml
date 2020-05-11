@@ -30,4 +30,9 @@
 
     <!-- Whether to enable Lineage Fast Charge Prefernece -->
     <bool name="config_lineageFastChargeSupported">false</bool>
+
+    <!-- Battery Health -->
+    <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/bms/charge_full</string>
+    <string name="config_batteryDesignCapacity">/sys/class/power_supply/bms/charge_full_design</string>
+    <string name="config_batteryChargeCycles">/sys/class/power_supply/bms/cycle_count</string>
 </resources>
