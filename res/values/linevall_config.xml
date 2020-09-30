@@ -29,4 +29,7 @@
      <!-- Whether SELinux status should be shown or not. -->
      <bool name="config_show_selinux_status">true</bool>
 
+    <string-array name="config_ignored_backup_transports" translatable="false">
+        <item>com.android.localtransport/.LocalTransport</item>
+    </string-array>
 </resources>
