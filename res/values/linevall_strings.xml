@@ -28,4 +28,7 @@
     <string name="linevall_settings_title">LineVall Set</string>
     <string name="linevall_settings_summary">Customizations and more !</string>
 
+    <!-- Radio Info -->
+    <string name="radio_info_title">Radio info</string>
+
 </resources>
