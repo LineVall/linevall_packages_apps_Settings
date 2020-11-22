@@ -20,17 +20,22 @@
     <string name="linevall_settings_title">LineVall Set</string>
     <string name="linevall_settings_summary">Customizations and more !</string>
 
-    <!-- Notification log -->
-    <string name="notification_log_summary">Show notifications history log</string>
+     <!-- Notification log -->
+     <string name="notification_log_summary">Show notifications history log</string>
 
-    <!-- General -->
-    <string name="copied_to_clipboard">Copied to clipboard</string>
-    <string name="longpress_to_clipboard">Long-press to copy</string>
+     <!-- General -->
+     <string name="copied_to_clipboard">Copied to clipboard</string>
+     <string name="longpress_to_clipboard">Long-press to copy</string>
 
-    <!-- Package details --> 
-    <string name="package_details_group_title">Package details</string>
-    <string name="package_name">Package name</string>
-    <string name="package_version">Package version</string> 
-    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+     <!-- Package details -->
+     <string name="package_details_group_title">Package details</string>
+     <string name="package_name">Package name</string>
+     <string name="package_version">Package version</string>
+     <string name="package_version_text">
+          <xliff:g id="version_num">%1$s</xliff:g>
+     </string>
+
+     <!-- Refresh rate -->
+     <string name="refresh_rate_title">Screen refresh rate</string>
 
 </resources>
