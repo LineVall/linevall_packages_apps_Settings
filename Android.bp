@@ -112,6 +112,7 @@ android_library {
         "androidx.room_room-runtime",
         "SystemUIUnfoldLib",
         "androidx.dynamicanimation_dynamicanimation",
+        "vendor.lineage.fastcharge-V1.0-java",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
