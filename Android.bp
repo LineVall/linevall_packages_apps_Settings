@@ -111,6 +111,7 @@ android_library {
         "Settings-change-ids",
         "androidx.room_room-runtime",
         "SystemUIUnfoldLib",
+        "androidx.dynamicanimation_dynamicanimation",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
