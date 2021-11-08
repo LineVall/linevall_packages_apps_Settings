@@ -43,6 +43,7 @@ public class LinevallVersionDetailPreferenceController extends BasePreferenceCon
 
     private static final String KEY_LINEVALL_VERSION_PROP = "ro.modversion";
     private static final String KEY_LINEVALL_RELEASETYPE_PROP = "ro.linevall.releasetype";
+    private static final String KEY_LINEVALL_ZIPTYPE_PROP = "ro.linevall.edition";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
@@ -65,8 +66,9 @@ public class LinevallVersionDetailPreferenceController extends BasePreferenceCon
     public CharSequence getSummary() {
 	String[] linevallVer = SystemProperties.get(KEY_LINEVALL_VERSION_PROP).split("v");
 	String linevallReleasetype =  SystemProperties.get(KEY_LINEVALL_RELEASETYPE_PROP);
-	if (!linevallVer[1].isEmpty() && !linevallReleasetype.isEmpty())
-	    return linevallVer[1] + " | " + linevallReleasetype;
+        String linevallZiptype =  SystemProperties.get(KEY_LINEVALL_ZIPTYPE_PROP);
+	if (!linevallVer[1].isEmpty() && !linevallReleasetype.isEmpty() && !linevallZiptype.isEmpty())
+	    return linevallVer[1] + " | " + linevallReleasetype + " | " + linevallReleasetype;
 	else
             return mContext.getString(R.string.unknown);
     }
