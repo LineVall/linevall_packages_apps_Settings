@@ -22,4 +22,7 @@
 
      <!-- circle avatar size dimensions-->
      <dimen name="circle_avatar_size">40dp</dimen>
+
+    <!-- Rounded corner theme radius -->
+    <dimen name="rounded_corner_theme_overlay_radius">24dp</dimen>
 </resources>
