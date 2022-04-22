@@ -309,4 +309,8 @@
     <string name="back_height_high_label">Bottom</string>
     <string name="back_height_title">Back gesture height</string>
     <string name="back_height_summary">Screen height valid for back gesture</string>
+
+    <!-- Back gesture haptic -->
+    <string name="back_gesture_haptic_title">Back gesture haptic</string>
+    <string name="back_gesture_haptic_summary">Vibrate when performing a back gesture</string>
 </resources>
