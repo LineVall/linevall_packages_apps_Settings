@@ -282,4 +282,8 @@
     <string name="ime_narrow">Narrow</string>
     <string name="ime_default">Default</string>
     <string name="ime_hidden">Hidden</string>
+
+    <!-- Mic + Camera indicator -->
+    <string name="mic_camera_indicator_settings_title">Status bar mic and camera indicator</string>
+    <string name="mic_camera_indicator_settings_description">Show indicator when an any app uses mic or camera</string>
 </resources>
