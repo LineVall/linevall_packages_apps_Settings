@@ -247,4 +247,9 @@
     <!-- Black theme for dark mode -->
     <string name="black_bg_title">Pure black</string>
     <string name="black_bg_summary">Pure black background for dark theme</string>
+
+    <!-- Per-app volume control -->
+    <string name="app_volume">App volume</string>
+    <string name="app_volume_title">Per-app volume control</string>
+    <string name="app_volume_summary">Allow to set different volume levels for each app</string>
 </resources>
