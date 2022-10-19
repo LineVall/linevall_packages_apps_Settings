@@ -104,6 +104,7 @@ public class SimStatusPreferenceController extends BasePreferenceController {
         // Add additional preferences for each sim in the device
         for (int simSlotNumber = 0; simSlotNumber < mSlotSimStatus.size(); simSlotNumber++) {
             final Preference multiSimPreference = createNewPreference(screen.getContext());
+            multiSimPreference.setCopyingEnabled(true);
             multiSimPreference.setOrder(mSlotSimStatus.getPreferenceOrdering(simSlotNumber));
             multiSimPreference.setKey(mSlotSimStatus.getPreferenceKey(simSlotNumber));
             category.addPreference(multiSimPreference);
