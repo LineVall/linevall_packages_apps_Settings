@@ -374,4 +374,10 @@
     <string name="charging_control_target_time_title">Target time to full charge</string>
     <string name="charging_control_target_time_summary">Battery will be fully charged by %s</string>
     <string name="charging_control_limit_title">Limit</string>
+
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
 </resources>
