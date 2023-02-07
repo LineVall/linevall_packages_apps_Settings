@@ -68,6 +68,7 @@
 
     <com.banana.support.preferences.OverlaySwitchPreference
         android:key="com.android.dark_bg"
+        settings:dkey="android:neutral"
         android:title="@string/black_bg_title"
         android:summary="@string/black_bg_summary" />
 </PreferenceScreen>
