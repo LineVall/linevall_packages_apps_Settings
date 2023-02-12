@@ -18,7 +18,7 @@
     <string name="about_device_name">Device</string>
 
     <!-- Hardware info -->
-    <string name="platform_revision">Platform</string>
+    <string name="platform_revision">SoC Model</string>
     <string name="total_ram">Total RAM</string>
 
     <string name="radio_info_title">Radio info</string>
