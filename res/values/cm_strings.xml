@@ -227,4 +227,19 @@
     <string name="smart_5g_title">Smart 5G</string>
     <string name="smart_5g_summary">Automatically switch between 5G and 4G to reduce battery consumption</string>
 
+    <!-- Battery health -->
+    <string name="current_battery_capacity">Current battery capacity</string>
+    <string name="designed_battery_capacity">Designed battery capacity</string>
+    <string name="battery_charge_cycles">Charge cycles completed</string>
+
+    <!-- Clipboard -->
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="longpress_to_clipboard">Long-press to copy</string>
+
+    <!-- Default getTimeSpentInApp string for Wellbeing to display. [CHAR LIMIT=NONE] -->
+    <string name="duration_less_than_one_minute">Less than 1 Minute</string> 
+
+    <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
+    <string name="screen_time_summary_usage_today">%1$s today</string>
+
 </resources>
