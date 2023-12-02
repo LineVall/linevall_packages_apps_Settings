@@ -21,7 +21,7 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <PreferenceScreen
+    <com.android.settingslib.widget.LayoutPreference
         android:layout="@layout/linevall_logo"
         android:key="linevall_logo"
         android:selectable="false" />
