@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 BananaDroid
+     SPDX-License-Identifier: Apache-2.0
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="581.000000dp"
+    android:height="581.000000dp"
+    android:viewportWidth="581.000000"
+    android:viewportHeight="581.000000">
+
+    <group
+            android:translateY="581.000000"
+            android:scaleX="0.100000"
+            android:scaleY="-0.100000">
+        <path
+            android:fillColor="#000000"
+            android:strokeWidth="1"
+            android:pathData="M3920 1161 c0 -5 6 -14 14 -20 11 -9 15 -8 20 5 9 23 8 24 -14 24 -11 0 -20 -4 -20 -9z" />
+    </group>
+</vector>

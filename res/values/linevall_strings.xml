@@ -121,4 +121,12 @@
     <!-- Backup Transport selection settings menu and activity title -->
     <string name="backup_transport_setting_label">Change backup provider</string>
     <string name="backup_transport_title">Select backup provider</string>
+
+    <!-- About phone cards -->
+    <string name="about_device_nearby">The device name can and will be seen by the nearby devices</string>
+    <string name="about_device_version_type_gapps">GApps</string>
+    <string name="about_device_version_type_vanilla">Vanilla</string>
+    <string name="version">LineVall Version</string>
+    <string name="edit">Edit</string>
+    <string name="device_name">Device name</string>
 </resources>
